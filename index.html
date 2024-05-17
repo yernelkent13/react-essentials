@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        const name = "Yernel Kent"; //Global Scope Variable
+        const age = 100;
+        const position = "IT Programmer";
+
+        function Hello() {
+            //const address = "makati";
+                if(age <= 100 ) {
+                    return (
+                        <>
+                            <h1>{name}</h1>
+                            <p>{position}</p>
+                            <p>{age}</p>
+                        </>
+                    // return <h1>{age}</h1>;
+                    
+                ); 
+                
+                } else {
+                    return <></>
+                }
+
+                return (
+                    (age <=100) ? (display) : <></>
+                )
+        }
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<Hello />)
+    </script>
+
+</body>
+
+</html>
